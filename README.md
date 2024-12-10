@@ -1,7 +1,7 @@
 
 # Bot-Image-Host-CF-Workers
 
-A Fork from [PhobosID/TL-Bot-Image-Host])(https://github.com/PhobosID/TL-Bot-Image-Host) that aims to make it works using Cloudflare Workers.
+A Fork from [PhobosID/TL-Bot-Image-Host](https://github.com/PhobosID/TL-Bot-Image-Host) that aims to make it works using Cloudflare Workers.
 As it name suggest. This script will make your telegram bot host your image in external website.
 
 <p align="center">
