@@ -1,16 +1,11 @@
 
-# TL-Bot-Image-Host 
+# Bot-Image-Host-CF-Workers
 
-![Header](https://static.cdn.phobos.id/assets/project/tl-bot-image-host/header.jpg)
-
-Simple Telegram Bot that helps you generate Image Link/URL for sharing across online, embedding into markdown, and much more.
+A Fork from [PhobosID/TL-Bot-Image-Host])(https://github.com/PhobosID/TL-Bot-Image-Host) that aims to make it works using Cloudflare Workers.
+As it name suggest. This script will make your telegram bot host your image in external website.
 
 <p align="center">
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
-<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">ㅤㅤ
-<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">ㅤㅤ<br>
-<img src="https://img.shields.io/badge/Maintenated-No-red.svg?style=for-the-badge">ㅤㅤ
-<img src="https://img.shields.io/badge/Pull_Request-No-red.svg?style=for-the-badge">
 </p>
 
 ## What to Do Next
@@ -35,16 +30,9 @@ by technicality, you do not need to register your account there.
 
 ## Deployment
 
-Upload all necessary files into your Hosting. Then Install all the dependencies as shown in the `package.json` files.
-
-```bash
-npm install
+1. Copy-Paste the Code into your Cloudflare Workers Code, and then hit Deploy.
+2. Set the Telegram Webhook as follows:
 ```
-After all libraries were installed, next is to run the bot script as shown:
-```bash
-node index.js
+https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=<YOUR_CLOUDFLARE_WORKERS_URL>
 ```
-## How the Bot Works
-
-![App Screenshot](https://static.cdn.phobos.id/assets/project/tl-bot-image-host/screenshot.jpg)
-
+3. All Set. Test your Telegram Bot now!
